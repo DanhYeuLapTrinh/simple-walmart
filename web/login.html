@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/loginStyle.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-login">
+                <h2>Welcome!</h2>
+                <p>Log in to your account</p>
+                <form action="Middle_Servlet" method="POST">
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="person-circle-sharp"></ion-icon>
+                        </span>
+                        <input type="text" name="txtUsername" value="" placeholder="Username">
+
+                    </div>
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" name="txtPassword" value="" placeholder="Password">
+                    </div>
+                    <button type="submit" value="Login" name="btAction" class="btn">LOG IN</button>
+                    <button type="reset" value="Reset"class="btn">RESET</button>
+                    <div class="register">
+                        <p>Not a member? 
+                            <a href="createNewAcc.html">Register</a> 
+                        </p>
+                    </div>
+                    <div class="buy">
+                        <p>Don't want to log in? 
+                            <a href="Middle_Servlet?btAction=showAllProduct">Shop</a> 
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

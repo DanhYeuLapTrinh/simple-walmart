@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    position: relative;
+}
+/* -------------------------------------------------------- */
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+.search-section{
+    width: 1000px;
+    height: 150px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7), rgba(255,255,255,.3));
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.txtField {
+    position: relative;
+}
+.txtField input{
+    width: 500px;
+    height: 35px;
+    padding: 20px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 2px solid #a0a0a028;
+}
+.txtField input:active, .txtField input:focus {
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+
+.search-btn{
+    width: 100px;
+    height: 44px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    -webkit-transition-duration: .3s;
+    cursor: pointer;
+}
+.search-btn:hover, .logout-btn:hover, .update-btn:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -webkit-transform: scale(1.05);
+}
+
+.logout-btn {
+    width: 100px;
+    height: 44px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 0;
+    -webkit-transition-duration: .3s;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.result-section {
+    width: 1000px;
+    height: 700px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7), rgba(255,255,255,.3));
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.table-section {
+    padding-top: 40px;
+    width: 850px;
+    height: 600px;
+}
+table, th ,td {
+    border-collapse: collapse;
+}
+.small-box{
+    width: 6%;
+    text-align: center;
+}
+.medium-box {
+    width: 14%;
+}
+.normal-box {
+    width: 25%;
+    padding-left: 10px;
+}
+.small-box-special {
+    border-right: none;
+    width: 6%;
+    text-align: center;
+}
+th{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+td{
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+a, a:active {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+.update-btn {
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    background-color: #929292d3;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    content: "\f00c";
+    display: none;
+}
+input[type="checkbox"]:hover {
+    background-color: black;
+}
+input[type="checkbox"]:checked {
+    background-color: black;
+}
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+.blank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #747474d3;
+}
+.icon-eyes {
+    padding-bottom: 10px;
+    font-size: 80px;
+}

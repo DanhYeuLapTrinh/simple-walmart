@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("image/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    position: relative;
+}
+/* ----------------------------------------------------------------- */
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7), rgba(255,255,255,.3));
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login h2{
+    padding-top: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+.first{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.input-field {
+    margin: 25px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.input-field input{
+    width: 320px;
+    height: 35px;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px solid #a0a0a080;
+}
+.input-field:active, .input-field:focus {
+    outline: none;
+}
+.icon{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    font-size: 18px;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FAF9F6;
+    border: 0;
+    background-color: black;
+    margin-bottom: 15px;
+    -webkit-transition-duration: .3s;
+    cursor:pointer;
+}
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -webkit-transform: scale(1.05);
+}
+
+input:active, input:focus {
+    outline: none;
+}

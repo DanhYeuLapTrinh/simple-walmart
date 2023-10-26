@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("./image/bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    position: relative;
+}
+/* -------------------------------------------------------- */
+.txtField input{
+    width: 500px;
+    height: 35px;
+    padding: 20px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 2px solid #a0a0a028;
+}
+
+.bk-btn:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    -webkit-transform: scale(1.05);
+}
+.result-section {
+    width: 1100px;
+    height: 900px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,.7), rgba(255,255,255,.3));
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.button-section {
+    height: 10%;
+    padding-bottom: 40px;
+}
+.announce{
+    height: 20%;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+.table-section {
+    padding-top: 40px;
+    width: 910px;
+    height: 600px;
+    height: 70%;
+}
+.icon {
+    font-size: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #fdba31;
+}
+.bk-btn {
+    width: 200px;
+    height: 44px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 0;
+    background-color: #fdba31;
+    color: white;
+    -webkit-transition-duration: .3s;
+    cursor: pointer;
+}
+table, th ,td {
+    /* border: 1px solid red; */
+    border-collapse: collapse;
+}
+.small-box{
+    width: 130px;
+    text-align: center;
+}
+.medium-box {
+    width: 130px;
+}
+.normal-box {
+    width: 520px;
+    padding-left: 10px;
+}
+.medium-box-special {
+    border-right: none;
+    width: 130px;
+    text-align: center;
+}
+.medium-box {
+    text-align: center;
+}
+th{
+    padding: 10px;
+    background-color: #0071ce;
+    color: #fdba31;
+}
+td{
+    padding: 10px 0;
+    border-top: 1px solid #0071ce;
+    border-bottom: 1px solid #0071ce;
+    border-right: 1px solid #0071ce;
+}
+.total {
+    text-align: center;
+    background-color: #0071ce;
+    font-weight: 700;
+    color: #fdba31;
+}
+.total2 {
+    border-right: none;
+    text-align: center;
+    background-color: #0071ce;
+    font-weight: 700;
+    color: #fdba31;
+}
+
+

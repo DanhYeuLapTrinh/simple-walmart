@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/signUpStyle.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-login">
+                <p class="first">Sign Up</p>
+                <form action="Middle_Servlet" method="POST">
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="person-circle-sharp"></ion-icon>
+                        </span>
+                        <input type="text" name="txtUsername" value="" placeholder="Username*">
+
+                    </div>
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" name="txtPassword" value="" placeholder="Password*">
+
+                    </div>
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="repeat-sharp"></ion-icon>
+                        </span>
+                        <input type="password" name="txtConfirm" value="" placeholder="Confirm password*">
+                    </div>
+                    <div class="input-field">
+                        <span class="icon">
+                            <ion-icon name="text-sharp"></ion-icon>
+                        </span>
+                        <input type="text" name="txtFullName" value="" placeholder="Fullname*">
+                    </div>
+                    <button type="submit" value="Sign Up" name="btAction" class="btn">SIGN UP</button>
+                    <button type="reset" value="Reset"class="btn">RESET</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
